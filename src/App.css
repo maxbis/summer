@@ -1,43 +1,68 @@
 .game {
   align-items: center;
-  margin: 5%;
+  margin: 1%;
   max-width: 600px;
-  padding: 5px;
+  padding: 2px;
+  background: #f4f5ff;
+  border: thin solid #999;
+  border-radius: 3px;
 }
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  border: thin solid rgb(201, 199, 199);
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.center {
+  flex: 1;
+  text-align: center;
 }
 
 .col {
-  padding: 5px;
-  margin: 20px;
+  padding: 2px;
+  margin: 2px;
 }
 
 .target {
   border: thin solid #999;
+  border-radius: 30px;
   font-size: 45px;
+  font-weight: bold;
   text-align: center; 
   color: rgb(250, 0, 0);
-  background-color: #ccc;
   width: 300px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+  background: rgb(153,153,153);
+  background: linear-gradient(90deg, rgba(153,153,153,1) 1%, rgba(0,18,94,1) 30%, rgba(0,18,94,0.9951042175292969) 70%, rgba(153,153,153,1) 100%); 
 }
 
 .timer {
   font-size: 35px;
   text-align: center; 
   color: blue;
-  width: 100px;;
+  width: 180px;;
 }
 
 .score {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center; 
   color: blue;
-  width: 150px;;
+  width: 100px;;
 }
 
 .number-form {
@@ -58,27 +83,64 @@
   width: 50px;
 }
 
+.button-row {
+  min-height: 75px;
+}
+
 .number-active {
   background-color: rgba(204, 204, 204, 0.589);
+  color:rgba(10, 10, 10, 0.705);
 }
 
 .number-active:hover{
-  background-color: rgba(8, 8, 8, 0.384);
+  background-color: rgba(8, 8, 8, 0.184);
   color: rgba(200,0,0,100);
 }
 
 .number-clicked {
-  background-color: rgba(219, 255, 203, 0.589);
+  background-color: rgba(8, 8, 8, 0.384);
   color: rgba(200,0,0,100);
-  opacity: 0.3;
 }
 
-.xchallenge-numbers {
-  padding: 5px;
-  margin: 1rem auto;
+
+.won {
+  color:rgb(17, 0, 250);
+  animation-name: blink;
+  animation-duration: 0.4s;
+  animation-iteration-count: 3;
 }
 
-.xfooter {
-  display: flex; width: 90%; 
+.lost, .play {
+  color:rgb(17, 0, 250);
 }
-.xtimer-value { color: darkgreen; font-size: 2rem; }
+
+@keyframes blink {
+  0% {
+    font-weight: bold;
+    color:rgb(250, 0, 0);
+  }
+  50% {
+    opacity: 0.1;
+    font-weight: bold;
+    color:rgb(250, 0, 0);
+  }
+  100% {
+    font-weight: bold;
+    color:rgb(250, 0, 0);
+  }
+}
+
+.help-icon {
+  float:right;
+  color:rgba(100, 89, 252, 0.747);
+}
+
+.icon:hover {
+  color:rgb(17, 0, 255)
+}
+
+.border {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
