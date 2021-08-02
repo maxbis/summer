@@ -1,0 +1,18 @@
+p {
+    margin: 15px;
+    color:rgb(7, 0, 37);
+}
+
+.small {
+    font-size: 16px;
+  }
+
+  .vsmall {
+    font-size: 9px;
+    color:rgb(164, 181, 255);
+  }
+  
+.help-right {
+    position: absolute;
+    right: 50px;
+}
