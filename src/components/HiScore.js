@@ -6,7 +6,7 @@ import { GrUpdate } from "react-icons/gr";
 const months = ["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
 //const zeroPad = (num, places=2) => String(num).padStart(places, '0');
 const server='http://vps789715.ovh.net/yii/summer/hiscores/web/hiscores/';
-//const server='http://localhost:8080/hiscores/';
+// const server='http://localhost:8080/hiscores/';
 
 class HiScore extends React.Component {
 

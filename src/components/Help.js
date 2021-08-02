@@ -71,7 +71,7 @@ class Help extends React.Component {
               </p>
               <p><button className="help-right small" onClick={() => this.click() }>Cool, thanks Max!</button></p><br /><br />
               <hr></hr>
-              <p className="vsmall">Summer v1.0 created in React/Yii by Max Bisschop</p>
+              <p className="vsmall">Summer v1.01 created in React/Yii by Max Bisschop</p>
 
             </div>
   
